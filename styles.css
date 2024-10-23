@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #444;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+
+}
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #444;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Content Styling */
+section.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #444;
+}
+
+/* Video and Text Bubble Styling */
+.bubble-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;  /* Adds space between the video and the text bubble */
+    margin: 20px 0;
+}
+
+/* Video styling to ensure responsiveness */
+.bubble-container video {
+    width: 100%;        /* Video takes up full width of its container */
+    max-width: 400px;   /* Sets a maximum width for the video */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on video to make it interactive */
+.bubble-container video:hover {
+    transform: scale(1.05);    /* Slight zoom on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text bubble styling */
+.bubble {
+    position: relative;
+    background-color: #00e1ff;      /* Fun yellow color */
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Bubble tail styling */
+.bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #fd4faf;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -5px;
+    margin-bottom: -10px;
+}
+
+/* Hover effect for bubbles */
+.bubble:hover {
+    background-color: #fd4faf;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .bubble-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bubble {
+        max-width: 90%; /* Ensures the bubble fits well on smaller screens */
+        text-align: center;
+    }
+    
+    .bubble-container video {
+        max-width: 100%; /* Makes sure the video also adjusts well on smaller screens */
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Video and Text Bubble Container */
+.bubble-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Aligns items to the left, keeps bubble close to video */
+    gap: 10px;  /* Reduce the space between the video and the bubble */
+    margin: 20px 0;  /* Space between each video-bubble pair */
+}
+
+/* Video styling */
+.bubble-container video {
+    width: 100%;
+    max-width: 400px;  /* Ensure video has a proper size */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Text bubble styling */
+.bubble {
+    position: relative;
+    background-color: #00eeff;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Bubble tail styling */
+.bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #00eeff;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -5px;
+    margin-bottom: -10px;
+}
+
